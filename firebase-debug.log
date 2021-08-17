@@ -1,0 +1,44 @@
+[debug] [2021-06-04T09:02:33.418Z] ----------------------------------------------------------------------
+[debug] [2021-06-04T09:02:33.420Z] Command:       F:\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-06-04T09:02:33.421Z] CLI Version:   9.11.0
+[debug] [2021-06-04T09:02:33.421Z] Platform:      win32
+[debug] [2021-06-04T09:02:33.421Z] Node Version:  v14.17.0
+[debug] [2021-06-04T09:02:33.422Z] Time:          Fri Jun 04 2021 14:32:33 GMT+0530 (India Standard Time)
+[debug] [2021-06-04T09:02:33.422Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-04T09:02:33.429Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-04T09:02:33.429Z] > authorizing via signed-in user (gaurangmishra48@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project getflix-32d65. This may result in unexpected behavior. 
+[debug] [2021-06-04T09:02:33.451Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-getflix-32d65.json
+[debug] [2021-06-04T09:02:33.481Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/getflix-32d65/sites 
+[debug] [2021-06-04T09:02:35.113Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/getflix-32d65/sites 200
+[debug] [2021-06-04T09:02:35.113Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/getflix-32d65/sites {"sites":[{"name":"projects/1061653591095/sites/getflix-32d65","defaultUrl":"https://getflix-32d65.web.app","appId":"1:1061653591095:web:9e1b9063e61c072190bbb2","type":"DEFAULT_SITE"}]}
+[debug] [2021-06-04T09:02:35.114Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/getflix-32d65/webApps/1:1061653591095:web:9e1b9063e61c072190bbb2/config [none]
+[debug] [2021-06-04T09:02:36.538Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/getflix-32d65/webApps/1:1061653591095:web:9e1b9063e61c072190bbb2/config 200
+[debug] [2021-06-04T09:02:36.538Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/getflix-32d65/webApps/1:1061653591095:web:9e1b9063e61c072190bbb2/config {"projectId":"getflix-32d65","appId":"1:1061653591095:web:9e1b9063e61c072190bbb2","storageBucket":"getflix-32d65.appspot.com","locationId":"us-central","apiKey":"AIzaSyA7ffK8vMx5NYp098qcjuDG5o5Fgknyeeg","authDomain":"getflix-32d65.firebaseapp.com","messagingSenderId":"1061653591095","measurementId":"G-46KCDQ7CGF"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] "GET / HTTP/1.1" 200 1730 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] \"GET / HTTP/1.1\" 200 1730 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] "GET /%PUBLIC_URL%/logo192.png HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] \"GET /%PUBLIC_URL%/logo192.png HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:52 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] "GET / HTTP/1.1" 200 1730 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] \"GET / HTTP/1.1\" 200 1730 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] "GET /%PUBLIC_URL%/logo192.png HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Jun/2021:09:02:55 +0000] \"GET /%PUBLIC_URL%/logo192.png HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\""}}
+[debug] [2021-06-04T12:19:01.011Z] Received signal SIGHUP 1

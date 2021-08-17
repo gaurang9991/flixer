@@ -1,0 +1,210 @@
+.movie-card .movie_poster {
+  max-height: 150px;
+  cursor: pointer;
+  object-fit: fill;
+  padding: 5px;
+  transition: transform 450ms;
+  margin: 10px 10px;
+}
+.movie-card {
+  border-radius: 5%;
+  transition-timing-function: ease-in-out;
+  transition: all 0.8s;
+}
+.movie-cards .movie-card:hover {
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  position: relative;
+  transform: scale(1.4);
+  margin: 25px 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.movie_tilte {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  margin-right: 20px;
+  display: none;
+  font-size: small;
+}
+.movie-cards .movie-card:hover .movie_tilte {
+  display: block;
+  z-index: 1;
+}
+.movie-cards .movie-card:hover .movie-card_fade {
+  display: block;
+}
+.movie-card_fade {
+  display: none;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  height: 4rem;
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  width: 89.5%;
+}
+.movie-cards {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-top: 5px;
+  will-change: transform;
+  padding: 15px;
+}
+
+.movie-cards::-webkit-scrollbar {
+  display: none;
+}
+.row-title h2 {
+  margin-left: 20px;
+  color: #fff;
+}
+.mylist_add {
+  display: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  margin-left: 20px;
+}
+.movie-cards .movie-card:hover .mylist_add {
+  display: block;
+  z-index: 1;
+}
+
+.movie-cards .movie-card .mylist_add:hover {
+  height: 25px;
+  width: 25px;
+}
+
+.movie-cards .movie-card .mylist_add:hover img {
+  height: 25px;
+  width: 25px;
+}
+
+.mylist_add img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.row-title h2 {
+  margin: 5px;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .movie-card .movie_poster {
+    max-height: 100px;
+    cursor: pointer;
+    object-fit: fill;
+    padding: 5px;
+    transition: transform 450ms;
+    margin: 10px 10px;
+  }
+  .movie-card {
+    border-radius: 5%;
+    transition-timing-function: ease-in-out;
+    transition: all 0.8s;
+  }
+  .movie-cards .movie-card:hover {
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.4);
+    margin: 25px 25px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .movie_tilte {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    margin-right: 20px;
+    display: none;
+    font-size: 0.6rem;
+  }
+  .movie-cards .movie-card:hover .movie_tilte {
+    display: block;
+    z-index: 1;
+  }
+  .movie-cards .movie-card:hover .movie-card_fade {
+    display: block;
+  }
+  .movie-card_fade {
+    display: none;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+    height: 4rem;
+    position: absolute;
+    bottom: 18px;
+    left: 15px;
+    width: 89.5%;
+  }
+  .movie-cards {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-top: 5px;
+    will-change: transform;
+    padding: 15px;
+  }
+
+  .movie-cards::-webkit-scrollbar {
+    display: none;
+  }
+  .row-title h2 {
+    margin-left: 20px;
+    color: #fff;
+  }
+  .mylist_add {
+    display: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    margin-left: 20px;
+    position: fixed;
+  }
+  .movie-cards .movie-card:hover .mylist_add {
+    display: block;
+    z-index: 1;
+  }
+
+  .movie-cards .movie-card .mylist_add:hover {
+    height: 20px;
+    width: 20px;
+  }
+
+  .movie-cards .movie-card .mylist_add:hover img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .mylist_add img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .row-title h2 {
+    margin: 5px;
+    margin-left: 20px;
+  }
+}
